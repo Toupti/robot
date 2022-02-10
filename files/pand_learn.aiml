@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+<!-- insert your AIML categories here -->
+
+<category>
+	<pattern>T ES LÀ ?</pattern>
+	<template>Nan j suis dans ton cul connard !</template>
+</category>
+
+<category>
+	<pattern>COMMENT ON FAIT ?</pattern>
+	<template>de quoi ? à Manger ? J'en sais rien moi ! Demande à ta mère !</template>
+</category>
+
+</aiml>

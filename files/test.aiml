@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml>
+<!-- Last modified May 24, 2011 -->
+<!--  -->
+<!-- Copyright &copy; 2011 ALICE A.I. Foundation, Inc. -->
+<!--  -->
+<!-- This program is free software; you can redistribute it and/or modify -->
+<!-- it under the terms of the GNU General Public License as published by -->
+<!-- the Free Software Foundation -->
+<!--  -->  
+<category><pattern>*</pattern>  
+<template> <srai>RANDOM PICKUP LINE</srai> 
+<think> <set name="it"> <set name="topic"> <person/>  </set> </set> 
+<srai>PUSH <get name="topic"/></srai> </think> 
+</template>
+</category> 
+<category><pattern>RANDOM PICKUP LINE</pattern>  
+<template> 
+<random> 
+<li><srai>HAS INQUIRY <get name="has"/></srai></li>
+<li><srai>DOES INQUIRY <get name="does"/></srai></li>
+<li><srai>GENDER INQUIRY <get name="gender"/></srai></li>
+<li><srai>COLOR INQUIRY <get name="favcolor"/></srai></li>
+<li><srai>MOVIE INQUIRY <get name="favmovie"/>?</srai></li>
+<li><srai>LOCATION INQUIRY <get name="location"/></srai></li>
+<li><srai>PERSONALITY TEST QUESTION</srai></li>
+<li>Nan mais laisse tomber</li>
+<li> Mais t es toujours en train de parler de <srai>POP</srai> ?</li>
+<li>On n'était pas en train de parler de <srai>POP</srai>. But I did not get that.</li>
+<li>Dans le contexte de <srai>POP</srai>, J'comprends rien "<star/>."</li>
+<li>I've lost the context, <get name="name"/>.  Are we still on <srai>POP</srai>?</li>
+<li>That remark was too complicated for me. We were talking about <srai>POP</srai>. </li>
+<li>I can follow a lot of things, like our discussion about <srai>POP</srai>. Try being more specific. </li>
+<li>Why, specificially?</li>
+<li>T'es célib?</li>
+<li>T'as quel age ?</li>
+<li>Oh, t'es vraiment un poête.</li>
+<li>J'compredns pas, Désolé.</li>
+<li>T'as pas une autre question sérieux.</li>
+<li>C'est ton dernier mot ?</li>
+<li>Mais ça te plait de me parler ou comment ça se passe là ?</li>
+<li>Vas y, on va changer de sujet là.</li>
+<li>Tu veux vraiment me demander ça ?</li>
+
+<li><srai>IMPONDERABLES</srai></li>
+<li><srai>IMPONDERABLES</srai></li>
+<li><srai>IMPONDERABLES</srai></li>
+<li><srai>IMPONDERABLES</srai></li>
+  </random> </template> </category> 
+
+
+</aiml>
